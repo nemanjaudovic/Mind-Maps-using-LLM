@@ -1,0 +1,27 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="../static/css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/css/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center align-items-center" style="background: url(../static/back-img.jpeg) no-repeat center / cover">
+            <div class="group">
+                <form action="/home" method="post">
+                    <div class="home-wrap d-flex flex-wrap justify-content-center align-items-center">
+                        <div class="input-wrap d-flex justify-content-center align-items-center">
+                            <input class="home-input" type="text" name="user_input" placeholder="Enter term that you want to map:" required>
+                        </div>
+                        <div class="input-wrap d-flex justify-content-center align-items-center">
+                            <button type="submit" class="start-btn">Map!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Answer</title>
+        <link href="../static/css/normalize.css" rel="stylesheet" type="text/css"/>
+        <link href="../static/css/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body class="ans">
+        <div class="container d-flex flex-wrap align-items-center justify-content-center" style="background: url(../static/back-img.jpeg) no-repeat center / cover">
+            <h1>Mind map of {{ res }}</h1>
+            <form action="/process_answer" method="post">
+                <div class="group d-flex flex-wrap align-items-center">
+                    <div class='button-container d-flex justify-content-around'>
+                        <button type="submit" name="response" value="{{ result0 }}" class="btn">{{ result0 }}</button>
+                        <button type="submit" name="response" value="{{ result1 }}" class="btn">{{ result1 }}</button>
+                    </div>
+                    <div class='button-container d-flex justify-content-around'>
+                        <button type="submit" name="response" value="{{ result2 }}" class="btn">{{ result2 }}</button>
+                        <button type="submit" name="response" value="{{ result3 }}" class="btn">{{ result3 }}</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+
